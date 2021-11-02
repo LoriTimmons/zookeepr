@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/LoriTimmons/zookeepr/issues"
   },
-  "homepage": "https://github.com/LoriTimmons/zookeepr#readme",
+  "homepage": "https://desolate-escarpment-31666.herokuapp.com/",
   "dependencies": {
     "express": "^4.17.1"
   }
