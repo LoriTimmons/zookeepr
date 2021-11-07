@@ -128,6 +128,7 @@ function validateAnimal(animal) {
     return false;
   }
   return true;
+  
 }
 
 // Keep at end
