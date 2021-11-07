@@ -137,14 +137,27 @@ function validateAnimal(animal) {
 // Route used to create the homepage for the server. 
 // Will respond with an html page to display on browser
 // This example is using the path() again to ensure it will work in any env. 
+
+// routing in our files 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
+app.get('/animals', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/animals.html'));
+});
+
+app.get('/zookeepers', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/zookeepers.html'));
+});
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/index.html'));
+});
 
 // Keep at end
 app.listen(PORT, () => {
   console.log("API server now on port ${PORT}!");
 });
 
-// 11.3.5
+// 11.3.6
