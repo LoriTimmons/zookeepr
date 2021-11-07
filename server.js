@@ -4,10 +4,13 @@ const PORT = process.env.PORT || 3001;
 const fs = require("fs");
 const path = require("path");
 
+
 // parse incoming string data or array data
+// Middle ware
 app.use(express.urlencoded({ extended: true }));
 // parse incoming JSON data
 app.use(express.json());
+app.use(express.static('public'));
 
 // Creating a route that the front end can request data from
 const { animals } = require("./data/animals");
@@ -131,9 +134,17 @@ function validateAnimal(animal) {
   
 }
 
+// Route used to create the homepage for the server. 
+// Will respond with an html page to display on browser
+// This example is using the path() again to ensure it will work in any env. 
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, './public/index.html'));
+});
+
+
 // Keep at end
 app.listen(PORT, () => {
   console.log("API server now on port ${PORT}!");
 });
 
-// 11.2.6
+// 11.3.5

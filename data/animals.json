@@ -135,6 +135,24 @@
         "hungry"
       ],
       "id": "13"
+    },
+    {
+      "name": "lori",
+      "species": "lemur",
+      "diet": "",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "14"
+    },
+    {
+      "name": "lori",
+      "species": "lemur",
+      "diet": "",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "15"
     }
   ]
 }
