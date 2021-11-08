@@ -19,6 +19,7 @@
   },
   "homepage": "https://desolate-escarpment-31666.herokuapp.com/",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jest": "^27.3.1"
   }
 }
